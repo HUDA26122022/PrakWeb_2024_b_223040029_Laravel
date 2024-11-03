@@ -12,7 +12,7 @@
               <x-nav-link href="/about" :active="request()->is('about')">about</x-nav-link>
               <x-nav-link href="/blog" :active="request()->is('blog')">blog</x-nav-link>
               <x-nav-link href="/contact" :active="request()->is('contact')">contact</x-nav-link>
-             
+             //
             </div>
           </div>
         </div>
