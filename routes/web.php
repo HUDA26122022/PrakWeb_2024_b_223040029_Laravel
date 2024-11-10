@@ -15,13 +15,9 @@ Route::get('/posts', function () {
 });
 
 
-Route::get('/posts/{slug}', function($slug){
+Route::get('/posts/{post:slug}', function(Post $post){
    
-    //khusus untuk array
-
-   $post = Post::find($slug);
-
-   return view('post', ['title' => 'Single Post', 'post' => $post]);
+return view('post', ['title' => 'Single Post', 'post' => $post]);
 
 
 });
