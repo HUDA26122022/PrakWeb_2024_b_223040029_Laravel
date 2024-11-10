@@ -6,7 +6,7 @@
     <h2 class="mb-1 text-3xl tracking-tighter font-bold text-grey-900">{{ $post['title'] }}</h2>
 
     <div>
-      <a href="#" class="test-base text-gray-500">{{ $post['author'] }}</a> {{ $post->create_at->format('j F Y') }}
+      <a href="#" class="test-base text-gray-500">{{ $post['author'] }}</a> {{ $post->created_at->format('j F Y') }}
 
     <p class="my-4 font-light">
       {{ ($post['body']) }}
